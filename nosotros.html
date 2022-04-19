@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Nosotros</title>
+  </head>
+  <body class="nosotros">
+    <!-- NavBar -->
+    <section class="menu">
+      <nav>
+        <div class="mobile">
+          <div class="header">
+            <div class="logo">
+              <img src="./assets/img/Logo.png" alt="" />
+            </div>
+            <div class="more">
+              <button id="btn_more">
+                <span class="material-icons"> menu </span>
+              </button>
+            </div>
+          </div>
+          <div class="links collapsed" id="links">
+            <a href="./index.html">Inicio</a>
+            <a href="./clientes.html">Clientes</a>
+            <a href="./galeria.html">Galeria</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+          </div>
+        </div>
+        <div class="desktop">
+          <div class="logo">
+            <img src="./assets/img/Logo.png" alt="" />
+          </div>
+          <div class="primary">
+            <a href="./index.html">Inicio</a>
+            <a href="./clientes.html">Clientes</a>
+            <a href="./contacto.html">Contacto</a>
+          </div>
+          <div class="secondary full">
+            <a href="./galeria.html">Galeria</a>
+            <a href="./nosotros.html">Nosotros</a>
+          </div>
+          <div class="secondary mini">
+            <a href="#">More</a>
+            <div class="submenu">
+              <a href="./galeria.html">Galeria</a>
+              <a href="./nosotros.html">Nosotros</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Historia -->
+    <main class="nosotros_content">
+      <section>
+        <p class="nosotros_info">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta velit
+          quae magni. Ex rerum mollitia harum, nemo totam, enim cupiditate magni
+          eum eveniet aliquid beatae doloremque? A itaque ipsum rem. Obcaecati
+          doloribus voluptatum ex veniam corrupti tempore earum laboriosam nam
+          fugit, voluptatibus molestiae voluptate tenetur iste velit suscipit
+          minima vero ducimus debitis, impedit ut ab magnam iusto. Sint,
+          nesciunt facilis. Porro sint tenetur et nostrum doloremque,
+          temporibus, corporis ab ipsa quia officiis, voluptatibus explicabo.
+          Quam, culpa! Eos ratione possimus quo aut tenetur quas vitae iure,
+          doloribus, exercitationem repudiandae, quia tempora! Similique, nisi
+          quas odit dolorem corrupti ad repellendus obcaecati inventore iure?
+          Magni suscipit optio, vel nobis, tempore iste sapiente dolores quos
+          explicabo tempora ipsam aliquid! Minus ex incidunt praesentium quas.
+        </p>
+      </section>
+
+      <!-- Certificaciones -->
+      <section class="nosotros_video">
+        <div class="video">
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/X8fN7SGeDOw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_content">
+        <h3>Dogtora Kathe</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          doloremque perferendis dolore pariatur officia.
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com">
+              <i class="ri-facebook-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <p>
+          copyright &copy; 2022 Dogtora Kathe. designed by
+          <span>mbuitragoc</span>
+        </p>
+      </div>
+    </footer>
+    <script>
+      //Script para agregar el funcionamiento de boton al verse en mobile
+      const bMore = document.querySelector("#btn_more");
+      const link = document.querySelector("#links");
+      bMore.addEventListener("click", (e) => {
+        link.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
