@@ -531,7 +531,13 @@ select {
 .cliente_img {
   width: 90%;
   padding: 10px;
+  transition: 1s;
 }
+
+.cliente_img:hover{
+  background-color: #000;
+}
+
 .cliente_old {
   grid-area: oldimg;
 }
@@ -670,5 +676,9 @@ select {
 
   form {
     padding: 10px;
+  }
+
+  .video iframe{
+    width: 100%;
   }
 }
