@@ -527,6 +527,7 @@ select {
     "desc desc";
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .cliente_img {
   width: 90%;
@@ -535,7 +536,7 @@ select {
 }
 
 .cliente_img:hover{
-  
+  transform: scale(1.1) skew(15deg);
 }
 
 .cliente_old {
