@@ -520,7 +520,7 @@ select {
 .clientes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 300px auto;
+  grid-template-rows: 40px auto auto;
   grid-template-areas:
     "name name"
     "oldimg newimg"
