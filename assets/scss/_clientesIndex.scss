@@ -1,0 +1,56 @@
+.clientes_index {
+  margin-top: 5px;
+  h2{
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+  }
+  article{
+    h3{
+      text-decoration: underline;
+      font-size: 20px;
+      padding: 2px;
+    }
+    p{
+      padding: 10px;
+      text-align: center;
+      margin: 5px;
+    }
+    img{
+      max-width: 90%;
+      border-radius: 25px;
+    }
+  }
+}
+
+#cliente1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "nombre img"
+    "descripcion img";
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  .cliente1_img {
+    grid-area: img;
+  }
+}
+
+#cliente2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "img nombre"
+    "img descripcion";
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  .cliente2_img {
+    grid-area: img;
+  }
+}
+
