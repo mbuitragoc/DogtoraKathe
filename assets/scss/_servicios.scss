@@ -1,0 +1,22 @@
+.servicios {
+  padding: 5px;
+  margin-top: 5px;
+  h2{
+    border-bottom: 2px solid black;
+  }
+  .servicios_contenedor{
+    ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      li{
+        list-style: none;
+        font-size: 20px;
+        padding: 0 5px 0 10px;
+        margin: 5px;
+        text-align: center;
+      }
+    }
+  }
+}

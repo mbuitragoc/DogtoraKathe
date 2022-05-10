@@ -1,37 +1,48 @@
-.clientes {
+.contenedor_clientes {
+  font-family: roboto;
+  background-color: $colorFondo;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px auto auto;
+  grid-template-rows: 86px auto auto;
   grid-template-areas:
-    "name name"
-    "oldimg newimg"
-    "desc desc";
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  .cliente_img {
-    width: 90%;
-    padding: 10px;
-    transition: 1s;
-    &:hover{
-      transform: scale(1.05) skew(5deg);
+    "nav nav"
+    "main main"
+    "foot foot";
+  .clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px auto auto;
+    grid-template-areas:
+      "name name"
+      "oldimg newimg"
+      "desc desc";
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .cliente_img {
+      width: 90%;
+      padding: 10px;
+      transition: 1s;
+      &:hover{
+        transform: scale(1.05) skew(5deg);
+      }
     }
-  }
-  .cliente_old {
-    grid-area: oldimg;
-  }
-  .cliente_new {
-    grid-area: newimg;
-  }
-  .cliente_nombre {
-    margin: 5px;
-    background-color: $colorPrincipal;
-    border-radius: 25px;
-    grid-area: name;
-  }
-  .cliente_descripcion {
-    grid-area: desc;
-    padding: 10px;
-    font-size: 1.1rem;
+    .cliente_old {
+      grid-area: oldimg;
+    }
+    .cliente_new {
+      grid-area: newimg;
+    }
+    .cliente_nombre {
+      margin: 5px;
+      background-color: $colorPrincipal;
+      border-radius: 25px;
+      grid-area: name;
+    }
+    .cliente_descripcion {
+      grid-area: desc;
+      padding: 10px;
+      font-size: 1.1rem;
+    }
   }
 }

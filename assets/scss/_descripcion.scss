@@ -1,0 +1,44 @@
+.descripcion {
+  display: grid;
+  background-image: url(https://s0.hfdstatic.com/sites/the_hartford/pubimgs/1444706361843.jpg?v=2020-12-30_09124757);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo Name"
+    "logo descripcion";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .descripcion_logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      border-radius: 20px;
+      border: 2px solid;
+    }
+  }
+  .descripcion_nombre {
+    display: flex;
+    color: black;
+    font-size: 2.8em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    margin-top: 5px;
+    background-color: $colorPrincipalDeg;
+    border-radius: 45px;
+    border-bottom: 3px solid black;
+  }
+  .descripcion_parrafo {
+    grid-area: descripcion;
+    border: 1.5px dashed;
+    color: black;
+    background-color: $colorHover;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+  }
+}
