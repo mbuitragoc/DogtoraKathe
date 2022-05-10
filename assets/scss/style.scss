@@ -2,39 +2,11 @@
 
 @import "variables";
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.contenedor {
-  font-family: roboto;
-  background-color: $colorFondo;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 86px auto auto;
-  grid-template-areas:
-    "nav nav"
-    "main main"
-    "foot foot";
-}
+@import "generales";
 
 @import "navbar";
 
 @import "footer";
-
-/* Main */
-main {
-  grid-area: main;
-}
-
-h2 {
-  text-align: center;
-}
-
-section {
-  padding: 10px;
-}
 
 /* Inicio */
 @import "descripcion";
@@ -45,207 +17,17 @@ section {
 
 @import "ubicacion";
 
-/* * Pagina Galeria - Nav y Foot se usan en todas */
-.galeria {
-  font-family: roboto;
-  background-color: $colorFondo;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 86px auto auto;
-  grid-template-areas:
-    "nav"
-    "main"
-    "foot";
-}
+/* Pagina Galeria */
+@import "galeria";
 
-.galeria_contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "c1 c1 c2"
-    "c1 c1 c3"
-    "c4 c5 c6"
-    "c7 c8 c6";
-  justify-items: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.img_contenedor {
-  overflow: hidden;
-}
-
-.galeria_img1 {
-  grid-area: c1;
-}
-
-.galeria_img {
-  max-width: 100%;
-  padding: 5px;
-  transition: 0.5s;
-}
-
-.galeria_img:hover {
-  transform: scale(1.15);
-}
-
-.galeria_img5 {
-  grid-area: c6;
-}
-
-/* Pagina Contacto  */
+/* Pagina Contacto */
 @import "contacto";
 
-/* * Pagina About Us - Nav y Foot se usan en todos*/
-.nosotros_info {
-  padding: 5px;
-  font-size: 1.2em;
-  text-align: justify;
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  align-items: center;
-}
-
-.nosotros {
-  font-family: roboto;
-  background-color: $colorFondo;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 86px auto auto;
-  grid-template-areas:
-    "nav nav"
-    "main main"
-    "foot foot";
-}
-
-.nosotros_content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+/* Pagina About Us */
+@import "nosotros";
 
 /* Pagina Clientes */
 @import "clientes";
 
 /* Media Queries */
-
-/* Tablet */
-@media screen and (max-width: 820px) {
-  nav{
-    .logo {
-      min-width: 100px;
-    }
-    .secondary{
-      &.full{
-        display: none;
-      }
-      &.mini{
-        display: block !important;
-        .submenu{
-          background-color: $colorPrincipal;
-          position: absolute;
-          display: none;
-          width: 175px;
-          right: 0;
-        }
-        &:hover{
-          .submenu{
-            display: block;
-          }
-        }
-      }
-    }
-  }
-
-  .nosotros_content {
-    flex-direction: column;
-  }
-
-  .contenedor_clientes {
-    grid-template-columns: 1fr;
-    grid-template-rows: 86px auto auto auto;
-    grid-template-areas:
-      "nav"
-      "main"
-      "main"
-      "foot";
-    .clientes {
-      grid-template-columns: 1fr;
-      grid-template-rows: 40px auto auto auto;
-      grid-template-areas:
-        "name"
-        "oldimg"
-        "newimg"
-        "desc";
-    }
-  }
-}
-
-/* Mobil */
-@media screen and (max-width: 650px) {
-  nav{
-    .desktop {
-      display: none;
-    }
-    .mobile {
-      display: block;
-    }
-  }
-
-  .descripcion {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "logo"
-      "name"
-      "descripcion";
-  }
-
-  #cliente1, #cliente2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "nombre"
-      "descripcion"
-      "img";
-    justify-items: center;
-    align-items: center;
-  }
-
-  .galeria_contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-      "c1 c1"
-      "c1 c1"
-      "c2 c3"
-      "c4 c6"
-      "c5 c6"
-      "c7 c8";
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .contacto {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "nav"
-      "form"
-      "foot";
-    form {
-      padding: 10px;
-    }
-  }
-
-  .video iframe{
-    width: 100%;
-  }
-}
+@import "mediaQueries";

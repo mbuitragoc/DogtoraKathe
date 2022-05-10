@@ -37,6 +37,19 @@
   grid-template-areas: "nav nav" "main main" "foot foot";
 }
 
+/* Main */
+main {
+  grid-area: main;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  padding: 10px;
+}
+
 .menu {
   padding: 0;
   grid-area: nav;
@@ -186,19 +199,6 @@ footer .socials a:hover i {
   font-weight: 200;
 }
 
-/* Main */
-main {
-  grid-area: main;
-}
-
-h2 {
-  text-align: center;
-}
-
-section {
-  padding: 10px;
-}
-
 /* Inicio */
 .descripcion {
   display: grid;
@@ -339,7 +339,7 @@ section {
   align-items: center;
 }
 
-/* * Pagina Galeria - Nav y Foot se usan en todas */
+/* Pagina Galeria */
 .galeria {
   font-family: roboto;
   background-color: #f7e7fe;
@@ -349,7 +349,7 @@ section {
   grid-template-areas: "nav" "main" "foot";
 }
 
-.galeria_contenedor {
+.galeria .galeria_contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -359,29 +359,29 @@ section {
   gap: 10px;
 }
 
-.img_contenedor {
+.galeria .galeria_contenedor .img_contenedor {
   overflow: hidden;
 }
 
-.galeria_img1 {
-  grid-area: c1;
-}
-
-.galeria_img {
+.galeria .galeria_contenedor .img_contenedor .galeria_img {
   max-width: 100%;
   padding: 5px;
   transition: 0.5s;
 }
 
-.galeria_img:hover {
+.galeria .galeria_contenedor .img_contenedor .galeria_img:hover {
   transform: scale(1.15);
 }
 
-.galeria_img5 {
+.galeria .galeria_contenedor .galeria_img1 {
+  grid-area: c1;
+}
+
+.galeria .galeria_contenedor .galeria_img5 {
   grid-area: c6;
 }
 
-/* Pagina Contacto  */
+/* Pagina Contacto */
 .contacto {
   font-family: roboto;
   background-color: #f7e7fe;
@@ -436,20 +436,7 @@ section {
   border-bottom: 2px solid #790da8;
 }
 
-/* * Pagina About Us - Nav y Foot se usan en todos*/
-.nosotros_info {
-  padding: 5px;
-  font-size: 1.2em;
-  text-align: justify;
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  align-items: center;
-}
-
+/* Pagina About Us */
 .nosotros {
   font-family: roboto;
   background-color: #f7e7fe;
@@ -459,10 +446,23 @@ section {
   grid-template-areas: "nav nav" "main main" "foot foot";
 }
 
-.nosotros_content {
+.nosotros .nosotros_content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+
+.nosotros .nosotros_content .nosotros_info {
+  padding: 5px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.nosotros .nosotros_content .video {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   align-items: center;
 }
 
@@ -574,7 +574,7 @@ section {
     justify-items: center;
     align-items: center;
   }
-  .galeria_contenedor {
+  .galeria .galeria_contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
