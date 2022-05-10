@@ -491,32 +491,32 @@ select {
   overflow: hidden;
 }
 
-.cliente_img {
+.clientes .cliente_img {
   width: 90%;
   padding: 10px;
   transition: 1s;
 }
 
-.cliente_img:hover {
-  transform: scale(1.1) skew(15deg);
+.clientes .cliente_img:hover {
+  transform: scale(1.05) skew(5deg);
 }
 
-.cliente_old {
+.clientes .cliente_old {
   grid-area: oldimg;
 }
 
-.cliente_new {
+.clientes .cliente_new {
   grid-area: newimg;
 }
 
-.cliente_nombre {
+.clientes .cliente_nombre {
   margin: 5px;
   background-color: #a24fb5;
   border-radius: 25px;
   grid-area: name;
 }
 
-.cliente_descripcion {
+.clientes .cliente_descripcion {
   grid-area: desc;
   padding: 10px;
   font-size: 1.1rem;
@@ -547,15 +547,15 @@ select {
   .nosotros_content {
     flex-direction: column;
   }
-  .clientes {
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px auto auto auto;
-    grid-template-areas: "name" "oldimg" "newimg" "desc";
-  }
   .contenedor_clientes {
     grid-template-columns: 1fr;
     grid-template-rows: 86px auto auto auto;
     grid-template-areas: "nav" "main" "main" "foot";
+  }
+  .contenedor_clientes .clientes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto auto auto;
+    grid-template-areas: "name" "oldimg" "newimg" "desc";
   }
 }
 
@@ -572,14 +572,7 @@ select {
     grid-template-rows: auto auto auto;
     grid-template-areas: "logo" "name" "descripcion";
   }
-  #cliente1 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nombre" "descripcion" "img";
-    justify-items: center;
-    align-items: center;
-  }
-  #cliente2 {
+  #cliente1, #cliente2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "nombre" "descripcion" "img";
