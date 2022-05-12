@@ -301,11 +301,11 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "nombre img" "descripcion img";
   justify-items: center;
   align-items: center;
   padding: 5px;
   margin: 10px;
+  grid-template-areas: "nombre img" "descripcion img";
 }
 
 #cliente1 .cliente1_img {
@@ -316,11 +316,11 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "img nombre" "img descripcion";
   justify-items: center;
   align-items: center;
   padding: 5px;
   margin: 10px;
+  grid-template-areas: "img nombre" "img descripcion";
 }
 
 #cliente2 .cliente2_img {

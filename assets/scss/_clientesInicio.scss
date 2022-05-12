@@ -22,33 +22,31 @@
   }
 }
 
-#cliente1 {
+@mixin distribucion{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas:
-    "nombre img"
-    "descripcion img";
   justify-items: center;
   align-items: center;
   padding: 5px;
   margin: 10px;
+}
+
+#cliente1 {
+  @include distribucion();
+  grid-template-areas:
+  "nombre img"
+  "descripcion img";
   .cliente1_img {
     grid-area: img;
   }
 }
 
 #cliente2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  @include distribucion();
   grid-template-areas:
-    "img nombre"
-    "img descripcion";
-  justify-items: center;
-  align-items: center;
-  padding: 5px;
-  margin: 10px;
+  "img nombre"
+  "img descripcion";
   .cliente2_img {
     grid-area: img;
   }  
