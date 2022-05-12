@@ -34,9 +34,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 86px auto auto;
-  grid-template-areas: "nav nav"
- "main main"
- "foot foot";
+  grid-template-areas: "nav nav" "main main" "foot foot";
 }
 
 /* Main */
@@ -207,8 +205,7 @@ footer .socials a:hover i {
   background-image: url(https://s0.hfdstatic.com/sites/the_hartford/pubimgs/1444706361843.jpg?v=2020-12-30_09124757);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo Name"
- "logo descripcion";
+  grid-template-areas: "logo Name" "logo descripcion";
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -308,8 +305,7 @@ footer .socials a:hover i {
   align-items: center;
   padding: 5px;
   margin: 10px;
-  grid-template-areas: "nombre img"
- "descripcion img";
+  grid-template-areas: "nombre img" "descripcion img";
 }
 
 #cliente1 .cliente1_img {
@@ -324,8 +320,7 @@ footer .socials a:hover i {
   align-items: center;
   padding: 5px;
   margin: 10px;
-  grid-template-areas: "img nombre"
- "img descripcion";
+  grid-template-areas: "img nombre" "img descripcion";
 }
 
 #cliente2 .cliente2_img {
@@ -351,19 +346,14 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 86px auto auto;
-  grid-template-areas: "nav"
- "main"
- "foot";
+  grid-template-areas: "nav" "main" "foot";
 }
 
 .galeria .galeria_contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "c1 c1 c2"
- "c1 c1 c3"
- "c4 c5 c6"
- "c7 c8 c6";
+  grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c4 c5 c6" "c7 c8 c6";
   justify-items: center;
   align-items: center;
   gap: 10px;
@@ -398,9 +388,7 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 86px auto auto;
-  grid-template-areas: "nav nav nav"
- "main form back"
- "foot foot foot";
+  grid-template-areas: "nav nav nav" "main form back" "foot foot foot";
 }
 
 .contacto .formulario {
@@ -455,9 +443,7 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 86px auto auto;
-  grid-template-areas: "nav nav"
- "main main"
- "foot foot";
+  grid-template-areas: "nav nav" "main main" "foot foot";
 }
 
 .nosotros .nosotros_content {
@@ -496,18 +482,14 @@ footer .socials a:hover i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 86px auto auto;
-  grid-template-areas: "nav nav"
- "main main"
- "foot foot";
+  grid-template-areas: "nav nav" "main main" "foot foot";
 }
 
 .contenedor_clientes .clientes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 40px auto auto;
-  grid-template-areas: "name name"
- "oldimg newimg"
- "desc desc";
+  grid-template-areas: "name name" "oldimg newimg" "desc desc";
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -569,18 +551,12 @@ footer .socials a:hover i {
   .contenedor_clientes {
     grid-template-columns: 1fr;
     grid-template-rows: 86px auto auto auto;
-    grid-template-areas: "nav"
- "main"
- "main"
- "foot";
+    grid-template-areas: "nav" "main" "main" "foot";
   }
   .contenedor_clientes .clientes {
     grid-template-columns: 1fr;
     grid-template-rows: 40px auto auto auto;
-    grid-template-areas: "name"
- "oldimg"
- "newimg"
- "desc";
+    grid-template-areas: "name" "oldimg" "newimg" "desc";
   }
 }
 
@@ -595,16 +571,12 @@ footer .socials a:hover i {
   .descripcion {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "logo"
- "name"
- "descripcion";
+    grid-template-areas: "logo" "name" "descripcion";
   }
   #cliente1, #cliente2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nombre"
- "descripcion"
- "img";
+    grid-template-areas: "nombre" "descripcion" "img";
     justify-items: center;
     align-items: center;
   }
@@ -612,21 +584,14 @@ footer .socials a:hover i {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "c1 c1"
- "c1 c1"
- "c2 c3"
- "c4 c6"
- "c5 c6"
- "c7 c8";
+    grid-template-areas: "c1 c1" "c1 c1" "c2 c3" "c4 c6" "c5 c6" "c7 c8";
     justify-items: center;
     align-items: center;
     gap: 10px;
   }
   .contacto {
     grid-template-columns: 1fr;
-    grid-template-areas: "nav"
- "form"
- "foot";
+    grid-template-areas: "nav" "form" "foot";
   }
   .contacto form {
     padding: 10px;
