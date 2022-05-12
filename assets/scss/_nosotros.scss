@@ -17,6 +17,13 @@
       padding: 5px;
       font-size: 1.2em;
       text-align: justify;
+      p{
+        margin: 10px;
+        a{
+          text-decoration: none;
+          color: $colorPrincipal;
+        }
+      }
     }
     .video {
       display: flex;
