@@ -448,7 +448,7 @@ footer .socials a:hover i {
 
 .nosotros .nosotros_content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -538,9 +538,6 @@ footer .socials a:hover i {
   }
   nav .secondary.mini:hover .submenu {
     display: block;
-  }
-  .nosotros_content {
-    flex-direction: column;
   }
   .contenedor_clientes {
     grid-template-columns: 1fr;
